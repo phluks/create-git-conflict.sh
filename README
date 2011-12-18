@@ -1,0 +1,20 @@
+INTRO
+
+This script sets up mergeconflicts for testing purposes.
+
+It creates a couple of files with some arbitrary content. 
+
+It then crates two branches (a and b) and makes conflicting changes to 
+both files on both branches.
+
+Finally it merges the branches and voila, you have conflicts.
+
+USAGE
+
+create-git-conflict.sh --run
+
+WARNING
+
+The script deletes branches a and b before it re-creates
+them. Make sure, that you don't have any branches named a or b in
+your git repo. The script cannot check for it.
