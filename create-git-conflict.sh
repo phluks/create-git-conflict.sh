@@ -16,6 +16,8 @@ git show > /dev/null
 if [ "$?" != 0 ]; then
 	echo
 	echo It seems that you are not in a git repo!
+  echo
+  echo If you are, you may need to make an initial commit.
 	echo
 	exit 1
 fi
